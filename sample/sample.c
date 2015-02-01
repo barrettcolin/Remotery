@@ -3,7 +3,7 @@
 #include "Remotery.h"
 
 double delay() {
-    int i, end;
+    int i = 0, end;
     double j = 0;
 
     rmt_BeginCPUSample(delay);
