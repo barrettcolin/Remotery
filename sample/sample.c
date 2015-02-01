@@ -7,7 +7,7 @@ double delay() {
     double j = 0;
 
     rmt_BeginCPUSample(delay);
-    for( i = 0, end = rand()/100; i < end; ++i ) {
+    /*for( i = 0, end = rand()/100; i < end; ++i )*/ {
         j += sin(i);
     }
     rmt_EndCPUSample();
@@ -22,7 +22,7 @@ int main( int argc, const char **argv ) {
         return -1;
     }
 
-    for(;;) {
+    /*for(;;)*/ {
         rmt_LogText("start profiling");
         delay();
         rmt_LogText("end profiling");
